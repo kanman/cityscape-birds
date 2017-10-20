@@ -1,0 +1,302 @@
+
+html {
+background: url("/images/City-bg-night.jpg") center center fixed;
+animation-name: bg;
+animation-duration: 55s;
+animation-iteration-count: infinite;
+animation-timing-function: linear;
+background-size: cover;
+
+-webkit-animation-name: bg;
+-webkit-animation-duration: 55s;
+-webkit-animation-iteration-count: infinite;
+-webkit-animation-timing-function: linear;
+background-size: cover;
+}
+
+@keyframes bg {
+
+from { background-position: 0 0; } to
+
+{ background-position: -4000px 0; }
+
+}
+
+@-webkit-keyframes bg {
+
+from { background-position: 0 0; } to
+
+{ background-position: -4000px 0; }
+
+}
+
+
+
+
+
+header {
+    width: 40em;
+    height: 15em;
+
+    position: absolute;
+    margin-top: 9%;
+    margin-left: 62%;
+
+
+}
+
+
+h1 {
+color: #fff;
+position: absolute;
+font-size: 4vw;
+font-family: 'Lato', sans-serif;
+font-weight: 700;
+width: auto;
+text-shadow: 1px 1px #000;
+
+}
+
+h2 {
+color: #fff;
+position: absolute;
+font-size: 4vw;
+font-family: 'Lato', sans-serif;
+font-weight: 300;
+width: auto;
+text-shadow: 1px 1px #000;
+}
+
+nav {
+width: 39%;
+height: 15%;
+position: fixed;
+left: 58%;
+top: 43%;
+display: none;
+}
+
+ul {
+list-style-type: none;
+position: absolute;
+left: 0;
+top: 2em;
+
+}
+
+li {
+width: 12em;
+height: 3.5em;
+outline: 1.5px solid #fff;
+float: left;
+margin-right: 1em;
+text-align: center;
+color: #fff;
+font-family: 'Lato', sans-serif;
+font-weight: 300;
+line-height: 47px;
+margin-bottom: 1.5em;
+overflow: hidden;
+cursor: pointer;
+box-shadow: 1px 1px #999999;
+text-shadow: 1px 1px #999999;
+}
+
+
+
+a:hover li {
+transition: width 2s, height 4s, transform 2s;/*transition width and height*/
+-webkit-transition: width 2s height 4s -webkit-transform 2s; /*transition width*/
+background: #000;
+width: 14em;
+height: 5.5em;
+transition-timing-function: linear;/*timing of the transition*/
+-webkit-transition-timing-function: linear; /*timing of the transition webkit*/
+transition-delay: 2s;/*delays the transition*/
+-webkit-transition-delay: 2s; /*delays the transition*/
+
+}
+
+
+#birdflight {
+position: fixed;
+margin-top: 12%;
+margin-left: 43%;
+width: auto;
+height: auto;
+opacity: 0;
+animation-name: birdflight;
+animation-duration: 2s;
+animation-delay: 4s;
+animation-fill-mode: forwards;
+
+
+-webkit-animation-name: birdflight;
+-webkit-animation-duration: 2s;
+-webkit-animation-delay: 4s;
+-webkit-animation-fill-mode: forwards;
+}
+
+@keyframes birdflight {
+from {opacity: 0;}
+to
+{opacity: 1;}
+}
+
+
+@-webkit-keyframes birdflight {
+from {opacity: 0;}
+to
+{opacity: 1;}
+}
+
+
+
+
+
+.flock {
+position: absolute;
+margin-top: 8%;
+margin-left: -35%;
+width: auto;
+height: auto;
+animation-name: birdflock;
+animation-duration: 12s;
+animation-delay: 8s;
+animation-fill-mode: forwards;
+
+-webkit-animation-name: birdflock;
+-webkit-animation-duration: 12s;
+-webkit-animation-delay: 8s;
+-webkit-animation-fill-mode: forwards;
+
+
+}
+
+
+
+@keyframes birdflock {
+from {margin-left: -35%;}
+to {margin-left: 14%;}
+
+from {margin-top: 4%}
+to {margin-top: 12%}
+
+from {transform: scale(0.75);}
+to {transform: scale(1.25);}
+} 
+
+
+@-webkit-keyframes birdflock {
+from {margin-left: -35%;}
+to {margin-left: 14%;}
+
+from {margin-top: 4%}
+to {margin-top: 12%}
+
+from {transform: scale(0.75);}
+to {transform: scale(1.25);}
+
+} 
+
+
+
+
+.flock img {
+position: relative;
+outline: none;
+margin-right: -40px;
+}
+
+.colony {
+position: absolute;
+margin-top: 2%;
+margin-left: -30%;
+width: 20em;
+height: auto;
+animation-name: colony;
+animation-duration: 9s;
+animation-delay: 13s;
+animation-fill-mode: forwards;
+
+-webkit-animation-name: colony;
+-webkit-animation-duration: 9s;
+-webkit-animation-delay: 13s;
+-webkit-animation-fill-mode: forwards;
+
+}
+
+@keyframes colony {
+from {margin-left: -30%}
+to {margin-left: 3%}
+
+from {margin-top: 1%}
+to {margin-top: 4%}
+}
+
+
+@-webkit-keyframes colony {
+from {margin-left: -30%}
+to {margin-left: 3%}
+
+from {margin-top: 1%}
+to {margin-top: 4%}
+}
+
+
+
+.funnybird {
+position: absolute;
+margin-top: 25%;
+margin-left: -30%;
+animation-name: funnybird;
+animation-duration: 18s;
+animation-delay: 18s;
+animation-fill-mode: forwards;
+animation-iteration-count: infinite;
+
+-webkit-animation-name: funnybird;
+-webkit-animation-duration: 18s;
+-webkit-animation-delay: 18s;
+-webkit-animation-fill-mode: forwards;
+-webkit-animation-iteration-count: infinite;
+}
+
+
+
+@keyframes funnybird {
+from {margin-left: -30%;}
+to
+{margin-left: 110%;}
+
+from {transform: scale(0.5);}
+to
+{transform: scale(1.5);}
+}
+
+
+@-webkit-keyframes funnybird {
+from {margin-left: -30%;}
+to
+{margin-left: 110%;}
+
+from {transform: scale(0.5);}
+to
+{transform: scale(1.5);}
+
+
+}
+
+@media screen and (max-width: 1400px) {
+
+} 
+
+
+
+
+
+
+
+
+
+
